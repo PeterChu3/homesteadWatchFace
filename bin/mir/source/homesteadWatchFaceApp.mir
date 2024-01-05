@@ -1,0 +1,65 @@
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 4; ]
+import Toybox.Background;
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 5; ]
+import Toybox.Application.Storage;
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 7; @position = 4; ]
+var canDoBG = false;
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 8; @position = 4; ]
+var settingsChanged = true;
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 10; background = true; ]
+class homesteadWatchFaceApp extends Application.AppBase{
+    [ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 13; ]
+    function initialize() as Void {
+_Users_peter_Developer_homestead_watchapp_homesteadWatchFace_source_homesteadWatchFaceApp_mc_13_26_start:
+[ "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc" 14 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_peter_Developer_homestead_watchapp_homesteadWatchFace_source_homesteadWatchFaceApp_mc_13_26_stop:
+    }
+    [ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 18; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 22; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 26; ]
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+_Users_peter_Developer_homestead_watchapp_homesteadWatchFace_source_homesteadWatchFaceApp_mc_26_65_start:
+[ "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc" 27 8 ]
+        %tmp.1 = newa Array<Views or InputDelegates> 1;
+        %tmp.5 = getv ? :homesteadWatchFaceView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+_Users_peter_Developer_homestead_watchapp_homesteadWatchFace_source_homesteadWatchFaceApp_mc_26_65_stop:
+    }
+}
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 32; ]
+function getApp() as homesteadWatchFaceApp {
+_Users_peter_Developer_homestead_watchapp_homesteadWatchFace_source_homesteadWatchFaceApp_mc_32_43_start:
+[ "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc" 33 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 homesteadWatchFaceApp;
+    ret %tmp.4;
+_Users_peter_Developer_homestead_watchapp_homesteadWatchFace_source_homesteadWatchFaceApp_mc_32_43_stop:
+}
+[ @file = "/Users/peter/Developer/homestead_watchapp/homesteadWatchFace/source/homesteadWatchFaceApp.mc"; @line = 1; ]
+<init> {
+}
